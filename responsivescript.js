@@ -1,0 +1,1 @@
+$(.tocsubnav).remove

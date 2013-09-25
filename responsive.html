@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" type="text/css" 
+    	media="screen and (max-device:width: 850px)" href="mobile.css">-->
+    <link rel="stylesheet" type="text/css" href="responsive.css">	
+    <title>Responsive web design</title>
+</head>
+
+<body>
+	
+  <div class="container">
+	<div class="sidebar">
+		<img src="wiki.png" alt="Wikipedia Logo">
+		<ul class="wikilinks">
+			<li><a href="http://en.wikipedia.org/wiki/Main_Page">Main page</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Portal:Contents">Contents</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Portal:Featured_content">Featured content</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Portal:Current_events">Current events</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Special:Random">Random article</a></li>
+			<li><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector">Donate to Wikipedia</a></li>
+			<li><a href="http://shop.wikimedia.org">Wikimedia Shop</a></li>
+	</div>
+	<!--<div class="topbar">
+		<ul class="toprightnav">
+			    		<li class="tabs"><a class="linkstyle" href="#">
+			    			<div>View history</div>
+			    		</a></li>
+			    		<li class="tabs"><a class="linkstyle" href="#">
+			    			<div>Edit source</div>
+			    		</a></li>
+			    		<li class="tabs" id="active"><a class="linkstyle" href="#">
+			    			<div>Read</div>
+			    		</a></li>
+			    	</ul>
+	</div>
+	-->
+	<div class="article">
+	    <h1>Responsive web design</h1>
+
+	    <p><span class="keyword">Responsive web design (RWD)</span> is a web design approach aimed at crafting sites to provide an optimal 
+	    viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across 
+	    a wide range of devices (from mobile phones to desktop computer monitors).[1][2][3]</p>
+
+		<p>A site designed with RWD[1][4] adapts the layout to the viewing environment by using fluid, 
+		proportion-based grids,[5] flexible images,[6][7][8][9] and CSS3 media queries,[3][10][11] an 
+		extension of the @media rule.[12]</p>
+
+		<ul>
+
+			<li>The fluid grid concept calls for page element sizing to be in relative units like percentages,
+			 rather than absolute units like pixels or points.[5]</li>
+			<li>Flexible images are also sized in relative units, so as to prevent them from displaying outside 
+			their containing element.[6]</li>
+			<li>Media queries allow the page to use different CSS style rules based on characteristics of the 
+			device the site is being displayed on, most commonly the width of the browser.</li>
+			<li>Server-side components (RESS) in conjunction with client-side ones such as media queries can 
+			produce faster-loading sites for access over cellular networks and also deliver richer functionality/
+			usability avoiding some of the pitfalls of device-side-only solutions.[13]</li>
+		</ul>
+
+			<div class="toc">
+				<h4>Contents</h4>
+				<ol>
+					<li>Related concepts</li>
+						<ol class="tocsubnav">
+						<li>Mobile first, unobtrusive Javascript, and progressive enhancement</li>
+						<li>Progressive enhancement based on browser-, device-, or feature-detection</li>
+						</ol>
+					<li>Challenges, and other approaches</li>
+					<li>History</li>
+					<li>See also</li>
+					<li>References</li>
+				</ol>
+			</div>
+			<h2>Related concepts</h2>
+
+			<h3>Mobile first, unobtrusive JavaScript, and progressive enhancement</h3>
+			<p>"Mobile first", unobtrusive JavaScript, and progressive enhancement (strategies for when a new site
+			 design is being considered) are related concepts that predated RWD: browsers of basic mobile phones do
+			  not understand JavaScript or media queries, so the recommended practice is to create a basic web site,
+			   and enhance it for smart phones and PCs—rather than try graceful degradation to make a complex, image-
+			   heavy site work on the most basic mobile phones.[14][15][16][17]</p>
+
+			<h3>Progressive enhancement based on browser-, device-, or feature-detection</h3>
+			<p>Where a web site must support basic mobile devices that lack JavaScript, browser ("user agent") 
+			detection (also called "browser sniffing"), and mobile device detection[15][18] are two ways of deducing 
+			if certain HTML and CSS features are supported (as a basis for progressive enhancement)—however, these 
+			methods are not completely reliable unless used in conjunction with a device capabilities database.</p>
+
+			<p>For more capable mobile phones and PCs, JavaScript frameworks like Modernizr, jQuery, and jQuery Mobile
+			that can directly test browser support for HTML/CSS features (or identify the device or user agent) are 
+			popular. Polyfills can be used to add support for features—e.g. to support media queries (required for 
+			RWD), and enhance HTML5 support, on Internet Explorer. Feature detection also might not be completely reliable: 
+			some may report that a feature is available, when it is either missing or so poorly implemented that it is 
+			effectively nonfunctional.[19][20]</p>
+
+			<img class="screensimage" src="responsive_web_design.png" alt="Responsive Web Design Image">
+
+			<h2>Challenges, and other approaches</h2>
+			<p>Ethan Marcotte coined the term responsive web design (RWD) in a May 2010 article in A List Apart.[1] He 
+			described the theory and practice of responsive web design in his brief 2011 book titled Responsive Web Design. 
+			Responsive design was listed as #2 in Top Web Design Trends for 2012 by .net magazine[36] after progressive 
+			enhancement at #1. They also listed 20 of Ethan Marcotte's favourite responsive sites.[2]</p>
+
+			<p>Mashable called 2013 the Year of Responsive Web Design.[37] Many other sources have recommended responsive 
+			design as a cost-effective alternative to mobile applications.[38]</p>
+
+			<p>Forbes explains why you need to prioritize responsive design right now.[39]</p>
+
+			<p>In late 2012, Google recommended responsive design in its Webmaster’s Guide: “Google recommends 
+			webmasters follow the industry best practice of using responsive web design, namely serving the same 
+			HTML for all devices and using only CSS media queries to decide the rendering on each device.” [40]</p>
+
+			<h2>See also</h2>
+				<ul>
+					<li><a href="http://en.wikipedia.org/wiki/Tableless_web_design">Tableless web design</a></li>
+				</ul>
+
+			<h2>References</h2>
+
+			<ol>
+				<li>Marcotte, Ethan (May 25, 2010). "Responsive web design". A List Apart.</li>
+			</ol>
+
+
+	</div>
+  </div>
+    <script language="javascript" type="text/javascript" src="responsivescript.js"></script>
+
+</body>
+</html>
