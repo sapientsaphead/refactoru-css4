@@ -1,5 +1,5 @@
 * {
-	box-sizing: box-model;
+	box-sizing: border-box;
 }
 body {
 	color: black;
@@ -9,26 +9,32 @@ a {
 	text-decoration:none;
 	color: navy;
 }
-/*.topbar {
-	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
-	height: auto;
-	width: auto;
-	clear: both;
+.container {
+	padding-top: 2%;
+}
+.sidebar {
+	float:left;
+	width: 30%;
+	min-width: 320px;
+}
+.contentcontainer {
+	max-width: 850px;
+	overflow:hidden;
 }
 .toprightnav {
 	list-style-type: none;
 	padding:0;
-	margin-right: 25px;
+	margin-right: 3%;
 }
 .toprightnav li {
-	/*display: inline-block;
-	position: relative;*/
-	/*float: right;
+	display: inline-block;
+	position: relative;
+	float: right;
 	border-top: 1px solid #4863A0;
 	border-left: 1px solid #4863A0;
 	border-right: 1px solid #4863A0;
-	padding: 5px 10px 5px 10px;
-	margin: 0px 5px 0px 5px;
+	padding: 1% 2%;
+	margin: 0% 1%;
 	bottom:-1px;
 
 	border-top-right-radius: 5px;
@@ -36,45 +42,39 @@ a {
 	font-size: 14px;
 	font-weight:bold;
 }
-
 .linkstyle {
 	text-decoration:none;
 	display: block;
 	text-align:center;
 }
-
 #active {
 	position:relative;
 	background-color: white;
-}*/
-.container {
-	max-width: 850px;
-	padding-top: 20px;
 }
-.sidebar {
-	float:left;
-	width: 30%;
-}
-
 .article {
-	float:left;
-	width: 70%;
 	background-color: white;
 	border: 1px solid #4863a0;
-	padding: 10px;
+	padding: 2%;
+	clear:both;
 }
+
+
+.image {
+	text-align:center;
+}
+
 
 .keyword {
 	font-weight: bold;
 }
 
 .screensimage {
-	text-align: center;
+	width: 40%;
 }
 
 .toc {
 	border: 1px solid #999;
-	padding: 10px;
+	padding: 2%;
 	background-color: #eeeeee;
 	font-weight: bold;
 	display: inline-block;
@@ -87,3 +87,41 @@ a {
 	font-weight:normal;
 	text-align: left;
 }
+.gallery {
+	width: 30%;
+}
+.galleryimages {
+	text-align:center;
+}
+
+
+/* @media Rule */
+@media all and (max-width: 650px) {
+	.container {
+		padding: 4%;
+		overflow:hidden;
+	}
+	.contentcontainer {
+	float: left;
+	width: auto;
+	}
+	.gallery {
+	width: 50%;
+	}
+	.sidebar {
+		float: none;
+			}
+	.wikilinks {
+		list-style-type: none;
+		background-color: #eee;
+		padding-right: 15%;
+	}
+	.wikilinks li {
+		text-align: center;
+		border: 1px solid #4863a0;
+		background-color: white;
+	}
+	
+}
+
+
